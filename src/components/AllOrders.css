@@ -9,12 +9,29 @@
   margin-left: 6rem;
 }
 
+.TotalAccount {
+  display: flex;
+  width: 72%;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 6rem;
+  margin-bottom: 20px;
+  height: 8vh;
+  text-align: center;
+}
+
 .orders-table {
   width: 99%;
-
   border-collapse: collapse;
   table-layout: fixed;
   overflow-x: auto;
+  color: #000;
 }
 
 .orders-table th,
@@ -31,13 +48,47 @@
   color: #377dff;
 }
 
-.orders-table {
-  color: #000;
-}
-
 .orders-table tr:hover {
   background-color: #f5f5f5;
   color: #000;
+}
+.pagination {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pagination-info {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entries-per-page {
+  margin-bottom: 1rem;
+  border: none;
+}
+#entries-per-page-select {
+  border: none;
+}
+
+.pagination-button {
+  color: #000;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

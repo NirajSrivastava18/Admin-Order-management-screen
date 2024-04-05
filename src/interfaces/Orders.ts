@@ -5,7 +5,7 @@ interface Order {
   machine: string;
   customerName: string;
   contactNumber: string;
-  totalAmount: string;
+  totalAmount: number;
   status: string;
 }
 
@@ -17,7 +17,7 @@ export const orders: Order[] = [
     machine: 'Mixer stall 21',
     customerName: 'John Doe',
     contactNumber: '123-456-7890',
-    totalAmount: '100.00',
+    totalAmount: 100.0,
     status: 'sent',
   },
   {
@@ -27,7 +27,7 @@ export const orders: Order[] = [
     machine: 'Grinder stall 45',
     customerName: 'Jane Smith',
     contactNumber: '987-654-3210',
-    totalAmount: '150.00',
+    totalAmount: 150.0,
     status: 'failure',
   },
   {
@@ -37,7 +37,7 @@ export const orders: Order[] = [
     machine: 'Blender stall 37',
     customerName: 'Michael Johnson',
     contactNumber: '555-123-4567',
-    totalAmount: '75.00',
+    totalAmount: 75.0,
     status: 'pending',
   },
   {
@@ -47,7 +47,7 @@ export const orders: Order[] = [
     machine: 'Juicer stall 92',
     customerName: 'Emily Davis',
     contactNumber: '777-888-9999',
-    totalAmount: '200.00',
+    totalAmount: 200.0,
     status: 'refund Initiated',
   },
   {
@@ -57,7 +57,7 @@ export const orders: Order[] = [
     machine: 'Oven stall 13',
     customerName: 'David Wilson',
     contactNumber: '333-555-7777',
-    totalAmount: '300.00',
+    totalAmount: 300.0,
     status: 'refund completed',
   },
   {
@@ -67,7 +67,7 @@ export const orders: Order[] = [
     machine: 'Cooker stall 58',
     customerName: 'Sarah Brown',
     contactNumber: '999-000-1111',
-    totalAmount: '180.00',
+    totalAmount: 180.0,
     status: 'sent',
   },
   {
@@ -77,7 +77,7 @@ export const orders: Order[] = [
     machine: 'Fridge stall 74',
     customerName: 'James White',
     contactNumber: '222-333-4444',
-    totalAmount: '250.00',
+    totalAmount: 250.0,
     status: 'failure',
   },
   {
@@ -87,7 +87,7 @@ export const orders: Order[] = [
     machine: 'Freezer stall 83',
     customerName: 'Linda Anderson',
     contactNumber: '444-666-8888',
-    totalAmount: '400.00',
+    totalAmount: 400.0,
     status: 'pending',
   },
   {
@@ -97,7 +97,7 @@ export const orders: Order[] = [
     machine: 'Microwave stall 29',
     customerName: 'Chris Martinez',
     contactNumber: '777-999-1111',
-    totalAmount: '150.00',
+    totalAmount: 150.0,
     status: 'refund Initiated',
   },
   {
@@ -107,7 +107,7 @@ export const orders: Order[] = [
     machine: 'Toaster stall 75',
     customerName: 'Amanda Clark',
     contactNumber: '555-777-9999',
-    totalAmount: '50.00',
+    totalAmount: 50.0,
     status: 'refund completed',
   },
   {
@@ -117,7 +117,7 @@ export const orders: Order[] = [
     machine: 'Dishwasher stall 62',
     customerName: 'Kevin Lee',
     contactNumber: '111-222-3333',
-    totalAmount: '90.00',
+    totalAmount: 90.0,
     status: 'sent',
   },
   {
@@ -127,7 +127,7 @@ export const orders: Order[] = [
     machine: 'Washer stall 18',
     customerName: 'Michelle Green',
     contactNumber: '888-777-6666',
-    totalAmount: '320.00',
+    totalAmount: 320.0,
     status: 'failure',
   },
   {
@@ -137,7 +137,7 @@ export const orders: Order[] = [
     machine: 'Dryer stall 50',
     customerName: 'Ryan Taylor',
     contactNumber: '333-222-1111',
-    totalAmount: '280.00',
+    totalAmount: 280.0,
     status: 'pending',
   },
   {
@@ -147,7 +147,7 @@ export const orders: Order[] = [
     machine: 'Vacuum stall 39',
     customerName: 'Laura Hernandez',
     contactNumber: '999-888-7777',
-    totalAmount: '75.00',
+    totalAmount: 75.0,
     status: 'refund Initiated',
   },
   {
@@ -157,7 +157,7 @@ export const orders: Order[] = [
     machine: 'Fan stall 84',
     customerName: 'Daniel Adams',
     contactNumber: '555-444-3333',
-    totalAmount: '180.00',
+    totalAmount: 180.0,
     status: 'refund completed',
   },
   {
@@ -167,7 +167,7 @@ export const orders: Order[] = [
     machine: 'Heater stall 67',
     customerName: 'Jessica Torres',
     contactNumber: '111-999-8888',
-    totalAmount: '200.00',
+    totalAmount: 200.0,
     status: 'sent',
   },
   {
@@ -177,7 +177,7 @@ export const orders: Order[] = [
     machine: 'AirConditioner stall 98',
     customerName: 'Erica Flores',
     contactNumber: '222-777-6666',
-    totalAmount: '150.00',
+    totalAmount: 150.0,
     status: 'failure',
   },
   {
@@ -187,7 +187,7 @@ export const orders: Order[] = [
     machine: 'Lamp stall 26',
     customerName: 'Steven Nguyen',
     contactNumber: '888-333-5555',
-    totalAmount: '100.00',
+    totalAmount: 100.0,
     status: 'pending',
   },
   {
@@ -197,7 +197,7 @@ export const orders: Order[] = [
     machine: 'Blender stall 11',
     customerName: 'Samantha Kim',
     contactNumber: '444-555-6666',
-    totalAmount: '280.00',
+    totalAmount: 280.0,
     status: 'refund Initiated',
   },
   {
@@ -207,7 +207,7 @@ export const orders: Order[] = [
     machine: 'Juicer stall 58',
     customerName: 'Andrew Wilson',
     contactNumber: '777-333-1111',
-    totalAmount: '90.00',
+    totalAmount: 90.0,
     status: 'refund completed',
   },
   {
@@ -217,7 +217,7 @@ export const orders: Order[] = [
     machine: 'Cooker stall 72',
     customerName: 'Olivia Brown',
     contactNumber: '222-888-9999',
-    totalAmount: '120.00',
+    totalAmount: 120.0,
     status: 'sent',
   },
   {
@@ -227,7 +227,7 @@ export const orders: Order[] = [
     machine: 'Mixer stall 37',
     customerName: 'Matthew Lee',
     contactNumber: '555-777-1111',
-    totalAmount: '400.00',
+    totalAmount: 400.0,
     status: 'failure',
   },
   {
@@ -237,7 +237,7 @@ export const orders: Order[] = [
     machine: 'Grinder stall 84',
     customerName: 'Isabella Smith',
     contactNumber: '111-222-3333',
-    totalAmount: '150.00',
+    totalAmount: 150.0,
     status: 'pending',
   },
   {
@@ -247,7 +247,7 @@ export const orders: Order[] = [
     machine: 'Oven stall 19',
     customerName: 'Michael Johnson',
     contactNumber: '999-888-7777',
-    totalAmount: '200.00',
+    totalAmount: 200.0,
     status: 'refund Initiated',
   },
   {
@@ -257,7 +257,7 @@ export const orders: Order[] = [
     machine: 'Fridge stall 50',
     customerName: 'Sophia Davis',
     contactNumber: '333-444-5555',
-    totalAmount: '180.00',
+    totalAmount: 180.0,
     status: 'refund completed',
   },
   {
@@ -267,7 +267,7 @@ export const orders: Order[] = [
     machine: 'Freezer stall 63',
     customerName: 'Noah Wilson',
     contactNumber: '777-666-5555',
-    totalAmount: '300.00',
+    totalAmount: 300.0,
     status: 'sent',
   },
   {
@@ -277,7 +277,7 @@ export const orders: Order[] = [
     machine: 'Microwave stall 44',
     customerName: 'Emma Taylor',
     contactNumber: '222-333-4444',
-    totalAmount: '75.00',
+    totalAmount: 75.0,
     status: 'failure',
   },
   {
@@ -287,7 +287,7 @@ export const orders: Order[] = [
     machine: 'Toaster stall 17',
     customerName: 'Liam Martinez',
     contactNumber: '888-999-1111',
-    totalAmount: '250.00',
+    totalAmount: 250.0,
     status: 'pending',
   },
 ];
