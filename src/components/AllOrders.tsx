@@ -15,14 +15,15 @@ const AllOrders: React.FC = () => {
     const year = date.getFullYear();
     const month = String(date.getMonth() + 1).padStart(2, '0');
     const day = String(date.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
+    return `${day}/${month}/${year}`;
   };
 
   // Function to format time in hh:mm format
   const formatTime = (date: Date) => {
     const hours = String(date.getHours()).padStart(2, '0');
     const minutes = String(date.getMinutes()).padStart(2, '0');
-    return `${hours}:${minutes}`;
+    const seconds = String(date.getSeconds()).padStart(2, '0');
+    return `${hours}:${minutes}:${seconds}`;
   };
   return (
     <div className="all-orders-container">
@@ -31,12 +32,12 @@ const AllOrders: React.FC = () => {
         <thead>
           <tr>
             <th>S.NO</th>
-            <th>DATE :</th>
-            <th>ORDER :</th>
+            <th>DATE </th>
+            <th>ORDER ID</th>
             <th>MACHINE</th>
             <th>CUSTOMER</th>
             <th>CONTACT NUMBER</th>
-            <th>TOTALAMOUNT</th>
+            <th>TOTAL AMOUNT</th>
             <th>STATUS</th>
           </tr>
         </thead>
