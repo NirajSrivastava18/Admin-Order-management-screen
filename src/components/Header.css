@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+  margin-left: 4.5rem;
+  border-radius: 0px, 0px, 24px, 24px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header h5 {
+  margin-top: 5px;
+  color: #377dff;
+}
+
+.header input[type='text'] {
+  border: 1px solid #d7d1d1;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000;
+  outline: none;
+  width: 70%;
+}
+.searchArea {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}

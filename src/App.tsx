@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import AllOrders from './components/AllOrders';
 import SideNav from './components/SideNav';
+import Header from './components/Header';
 
 const App: React.FC = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = () => {
+    setSearchTerm(searchTerm);
+  };
+
   return (
-    <div className="app-container">
+    <>
       <SideNav />
-      <h1 className="app-title">All Orders</h1>
-      <AllOrders />
-    </div>
+      <div className="app-container">
+        <Header onSearch={handleSearch} />
+        <AllOrders />
+      </div>
+    </>
   );
 };
 

@@ -58,7 +58,7 @@ export const orders: Order[] = [
     customerName: 'David Wilson',
     contactNumber: '333-555-7777',
     totalAmount: '300.00',
-    status: 'refund complete',
+    status: 'refund completed',
   },
   {
     Sno: 6,
@@ -108,7 +108,7 @@ export const orders: Order[] = [
     customerName: 'Amanda Clark',
     contactNumber: '555-777-9999',
     totalAmount: '50.00',
-    status: 'refund complete',
+    status: 'refund completed',
   },
   {
     Sno: 11,
@@ -158,7 +158,7 @@ export const orders: Order[] = [
     customerName: 'Daniel Adams',
     contactNumber: '555-444-3333',
     totalAmount: '180.00',
-    status: 'refund complete',
+    status: 'refund completed',
   },
   {
     Sno: 16,
@@ -208,7 +208,7 @@ export const orders: Order[] = [
     customerName: 'Andrew Wilson',
     contactNumber: '777-333-1111',
     totalAmount: '90.00',
-    status: 'refund complete',
+    status: 'refund completed',
   },
   {
     Sno: 21,
@@ -258,7 +258,7 @@ export const orders: Order[] = [
     customerName: 'Sophia Davis',
     contactNumber: '333-444-5555',
     totalAmount: '180.00',
-    status: 'refund complete',
+    status: 'refund completed',
   },
   {
     Sno: 26,

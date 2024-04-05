@@ -1,15 +1,8 @@
-.app-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  box-shadow: 0 2px 4px rgba(237, 229, 229, 0.1);
-  border-radius: 4px;
-  background: #fff;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
-
-.app-title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: #333;
+.app-container {
+  background-color: #f8f9fa;
 }
